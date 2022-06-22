@@ -233,10 +233,12 @@ p {
 
 /* --------------Tablet and Android target----------- */
 
-@media (max-width: 992px) {
+@media (max-width: 992px) and (min-width:686px) {
+
+
     .home-img-bg {
         width: 60%;
-        display: flex;
+        display: absolute;
         justify-content: center;
         align-items: center;
         position: relative;
@@ -247,12 +249,39 @@ p {
     .home-social {
         position: relative;
         top: 2rem;
-
     }
+
 
     .home-content {
         position: relative;
-        top: 9rem;
+        top: 20rem;
+        padding-left: 0;
+    }
+}
+
+
+@media (max-width:686px) {
+
+
+    .home-img-bg {
+        width: 60%;
+        display: absolute;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 20rem;
+        left: 3rem;
+    }
+
+    .home-social {
+        position: relative;
+        top: 2rem;
+    }
+
+
+    .home-content {
+        position: relative;
+        top:10rem;
         padding-left: 0;
     }
 }
