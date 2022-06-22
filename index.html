@@ -23,30 +23,32 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets\css\styles.css" />
 
+    <!-- JS -->
+
     <!-- Title -->
     <title>Mayank - A Web Developer😤</title>
 </head>
 
 <body>
     <!-- Header -->
-    <header class="header container-fluid" id="header">
-        <div class="row">
+    <header class="header container-fluid" id="home">
+        <div class="row navigation-bar">
             <div class="col-lg-6 col-md-6 col-sm-6 col-6 brand">
                 <h3>Mayank</h3>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6  col-6">
-                <nav class="navbar navbar-expand-lg  ms-auto">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                <nav class="navbar navbar-expand-lg ms-auto">
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
                         aria-labelledby="navbarOffcanvasLgLabel">
-                        <a class="active" href="#home">Home</a>
-                        <a href="#about">About</a>
+                        <a href="#home">Home</a>
+                        <a href="#aboutme">About</a>
                         <a href="#skills">Skills</a>
                         <a href="#portfolio">Portfolio</a>
-                        <a href="#contact">Contact</a>
+                        <a href="contact-me page/index.html">Contact</a>
                         <div class="animation start-home"></div>
                     </div>
                 </nav>
@@ -67,12 +69,11 @@
                 <h1>Hi, I'am Mayank</h1>
                 <h5>Frontend Developer</h5>
                 <p>
-                    High level experience in web design and development knowledge,
-                    producing quality work.
+                    India based Freelancer | Development Knowledge | Producing quality work
                 </p>
                 <br />
 
-                <a class="contact-me-btn" type="button" href="#">Contact Me <i
+                <a class="contact-me-btn" type="button" href="contact-me page/index.html">Contact Me <i
                         class="ri-send-plane-2-line contact-me-icon"></i></a>
             </div>
 
@@ -96,6 +97,151 @@
             </div>
         </div>
     </header>
+
+    <!-- -----------------------About-Me Section----------------------------- -->
+
+    <section id="aboutme">
+        <div class="page-heading">
+            <h2>About Me</h2>
+            <p>My introduction</p>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row about-me-container">
+                        <div class="col-lg-6 col-md-12">
+                            <img class="about-me-img" src="assets/Images/aboutme.png" />
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <p>
+                                My name is Mayank. I am 20 years old. I am currently pursuing my B.Tech degree in
+                                Computer Science and Engineering from Galgotias University.
+
+                            </p>
+                            <div class="row about-me-fit">
+                                <div class="col-md-4 about-me-experience">
+                                    <h5>01+</h5>
+                                    <p>Years experience</p>
+                                </div>
+                                <div class="col-md-4 about-me-experience">
+                                    <h5>00+</h5>
+                                    <p>Completed projects</p>
+                                </div>
+                                <div class="col-md-4 about-me-experience">
+                                    <h5>00+</h5>
+                                    <p>Companies worked</p>
+                                </div>
+                            </div>
+                            <a href="assets/pdf/Mayank-Resume.pdf" type="button" class="contact-me-btn">
+                                Download CV <i class="fa-solid fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -----------------------Skills Section----------------------------- -->
+
+    <section id="skills">
+        <div class="page-heading">
+            <h2>Skills</h2>
+            <p>My technical level</p>
+        </div>
+        <div class="circle-animation">
+            <div class="circle-block">
+                <div class="circle-box">
+                    <p class="circle-number">
+                        <span class="circle-num">90</span>
+                        <span class="circle-sub">%</span>
+                    </p>
+                    <p class="circle-title">HTML</p>
+                </div>
+                <span class="circle-dots"></span>
+                <svg class="circle-svg">
+                    <defs>
+                        <linearGradient id="gradientStyle">
+                            <stop offset="0%" stop-color="#565656" />
+                            <stop offset="100%" stop-color="#b7b5b5" />
+                        </linearGradient>
+                    </defs>
+                    <circle class="circle" cx="90" cy="90" r="80" />
+                </svg>
+            </div>
+            <div class="circle-block">
+                <div class="circle-box">
+                    <p class="circle-number">
+                        <span class="circle-num">60</span>
+                        <span class="circle-sub">%</span>
+                    </p>
+                    <p class="circle-title">CSS</p>
+                </div>
+                <span class="circle-dots"></span>
+                <svg class="circle-svg">
+                    <circle class="circle" cx="90" cy="90" r="80" />
+                </svg>
+            </div>
+            <div class="circle-block">
+                <div class="circle-box">
+                    <p class="circle-number">
+                        <span class="circle-num">10</span>
+                        <span class="circle-sub">%</span>
+                    </p>
+                    <p class="circle-title">JS</p>
+                </div>
+                <span class="circle-dots"></span>
+                <svg class="circle-svg">
+                    <circle class="circle" cx="90" cy="90" r="80" />
+                </svg>
+                <script src="assets/js/circleanimation.js"></script>
+            </div>
+        </div>
+        <div class="progress-animation">
+
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar"
+                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">HTML</div>
+            </div>
+
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar"
+                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">CSS</div>
+            </div>
+
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar"
+                    aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">JS</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -----------------------Portfolio Section----------------------------- -->
+
+    <section id="portfolio">
+        <div class="page-heading">
+            <h2>Portfolio</h2>
+            <p>My Projects</p>
+        </div>
+        <div class="portfolio-websites">
+            <img class="empty-section" src="assets/Images/empty.png" alt="Empty section">
+        </div>
+    </section>
+
+
+    <section id="contact">
+
+        <div class="credits">
+
+            <hr>
+           
+            <span class="copyright ms-auto">
+                © <script>
+                    document.write(new Date().getFullYear())
+                </script>, made with <i class="fa fa-heart heart"></i> by Mayank
+            </span>
+        </div>
+    </section>
 </body>
 
 </html>
