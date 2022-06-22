@@ -1,0 +1,258 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    background: rgb(47, 47, 47);
+    background: radial-gradient(circle,
+            rgba(47, 47, 47, 1) 39%,
+            rgba(17, 17, 17, 1) 100%,
+            rgba(246, 246, 246, 1) 100%);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media (min-width:992px){
+    body{
+        overflow:hidden;
+    }
+}
+
+/*------------------------------------------------------------Header--------------------------------------------------------------*/
+
+.container-fluid {
+    padding: 3% 15% 3%;
+}
+
+nav {
+    position: relative;
+    width: 590px;
+    height: 50px;
+    background: none;
+    border-radius: 8px;
+    font-size: 0;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+}
+
+nav a:hover,
+.active {
+    color: #ffcb74;
+}
+
+nav .animation {
+    position: relative;
+    height: 100%;
+    height: 5px;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    background: #ffcb74;
+    border-radius: 8px;
+    transition: all 0.5s ease 0s;
+}
+
+nav a:nth-child(1) {
+    width: 100px;
+}
+
+nav .start-home,
+a:nth-child(1):hover~.animation {
+    width: 100px;
+    left: 0;
+}
+
+nav a:nth-child(2) {
+    width: 110px;
+}
+
+nav a:nth-child(2):hover~.animation {
+    width: 110px;
+    left: 100px;
+}
+
+nav a:nth-child(3) {
+    width: 100px;
+}
+
+nav a:nth-child(3):hover~.animation {
+    width: 100px;
+    left: 210px;
+}
+
+nav a:nth-child(4) {
+    width: 110px;
+}
+
+nav a:nth-child(4):hover~.animation {
+    width: 160px;
+    left: 310px;
+}
+
+nav a:nth-child(5) {
+    width: 120px;
+}
+
+nav a:nth-child(5):hover~.animation {
+    width: 120px;
+    left: 470px;
+}
+
+.navbar-toggler{
+    background-color: #ffcb74;
+}
+
+@media (max-width: 991px) {
+    nav {
+        width: 3.5rem;
+        height: 3rem;
+    }
+
+    nav .animation {
+        height: 0px;
+    }
+
+    .brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#navbarOffcanvasLg {
+    background-color: #111;
+    width: auto;
+}
+
+/*----------------------------------------------------------------------------Home--------------------------------------------------------------------------*/
+
+.main-section {
+    margin: 0;
+    padding: 15% 0%;
+}
+
+/*--------------------Social-icons------------------------*/
+.home-social {
+    padding-left: 0%;
+    width: 10%;
+}
+
+.home-social-icon,
+.home-social-icon:visited {
+    font-size: 1.25rem;
+    color: white;
+    padding: 15% 10% 15% 0%;
+    text-decoration: none;
+}
+
+.home-social-icon:hover {
+    font-size: 1.25rem;
+    color: #ffcb74;
+    padding: 15% 10% 15% 0%;
+    text-decoration: none;
+}
+
+/* Home-Text */
+
+h5,
+p {
+    color: #bfbebe;
+}
+
+.contact-me-btn {
+    position: relative;
+    padding: 1rem 2rem 0.5rem 2.5rem;
+    color: #000000;
+    border: 3px solid #776e62;
+    -webkit-transition: padding 0.3s ease-in-out;
+    transition: padding 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.contact-me-btn:before {
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-color: #ffcb74;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: #000000;
+}
+
+.contact-me-btn:hover {
+    padding: 0.75rem 2.25rem;
+    text-decoration: none;
+    color: #000000;
+}
+
+.contact-me-btn:hover:before {
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    color: #000000;
+}
+
+.contact-me-icon {
+    position: relative;
+    top: 3;
+}
+
+/* ------------------Home Image--------------------------- */
+.home-img-bg {
+    position: absolute;
+    right: 20%;
+    top: 25%;
+    width: 25%;
+    fill: #ffcb74;
+}
+
+.home-main-img {
+    width: 190px;
+}
+
+
+/* --------------Tablet and Android target----------- */
+
+@media (max-width: 992px) {
+    .home-img-bg {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 20rem;
+        left: 6rem;
+    }
+
+    .home-social {
+        position: relative;
+        top: 2rem;
+
+    }
+
+    .home-content {
+        position: relative;
+        top: 9rem;
+        padding-left: 0;
+    }
+}
