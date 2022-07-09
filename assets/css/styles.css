@@ -509,7 +509,7 @@ textarea{
 
 /*  Pulsing heart animation */
 
-.heart{
+.heartpulse{
   color: #eb5e28;
   animation:b 1s ease infinite;
 }
