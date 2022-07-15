@@ -284,6 +284,11 @@ footer {
     visibility: hidden;
   }
 
+  .social-links a:hover{
+    cursor:none;
+    -webkit-text-fill-color: #fff;
+  }
+  
   nav a {
     color: #000;
     padding: 0.5em 1.5em;
