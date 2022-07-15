@@ -113,6 +113,7 @@ nav a:hover {
 }
 
 .social-links a{
+  transition: all 0.3s ease-in-out;
   text-decoration: none;
   color: #000;
   font-size: min(2.5rem, 7vw);
@@ -285,6 +286,7 @@ footer {
   }
 
   .social-links a:hover{
+    transition: all 0.3s ease-in-out;
     cursor:none;
     -webkit-text-fill-color: #fff;
   }
