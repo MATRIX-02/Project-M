@@ -112,7 +112,7 @@ nav a:hover {
   justify-content: center;
 }
 
-.social-links i{
+.social-links a{
   text-decoration: none;
   color: #000;
   font-size: min(2.5rem, 7vw);
