@@ -57,6 +57,7 @@ nav a:hover {
   transition: all 0.3s ease-in-out;
 }
 .close {
+  cursor: pointer;
   float: right;
   margin: 1.5em;
   width: 1.5em;
@@ -77,19 +78,21 @@ nav a:hover {
 /*--------------------------------------------------------------------- Main------------------------------------------------------------------ */
 
 #main {
-/*   height: 30vh; */
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-  margin: auto;
+  padding: 10vh 0;
+  /* height: 30vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-title-container {
   padding: 1em;
+  width: 100vw;
 }
 
 .main-title {
   text-align: center;
-  font-size: min(5rem, 11.5vw);
+  font-size: min(5rem, 10vw);
   font-weight: lighter;
 }
 
@@ -103,6 +106,19 @@ nav a:hover {
   width: fit-content;
   font-weight: 900;
 }
+
+.social-links{
+  display: flex;
+  justify-content: center;
+}
+
+.social-links i{
+  text-decoration: none;
+  color: #000;
+  font-size: min(2.5rem, 7vw);
+  margin: 0 .5em;
+}
+
 
 /* ------------------------------------------------------------------------ Portfolio-------------------------------------------------------------- */
 
