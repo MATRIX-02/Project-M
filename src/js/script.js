@@ -1,11 +1,17 @@
+// import "bundle.js"
+
 var cursor = document.querySelector("#cust-cursor");
 var icons = document.querySelectorAll('.icon');
 var nav = document.querySelector("#menutoggle");
 var circles = document.querySelector("#circles");
+var sticky = document.querySelector(".iconparent");
 
 // For navigation
 var navlink = document.querySelectorAll(".nav-link");
 const lerp = (x, y, a) => x * (1 - a) + y * a;
+
+// For sticky cursor
+
 
 
 
